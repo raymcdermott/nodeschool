@@ -3,8 +3,6 @@ function repeat(operation, num) {
 
     operation();
 
-    console.log('Called function ' + num + ' times.');
-
     return repeat(operation, --num);
 }
 

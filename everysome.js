@@ -2,9 +2,9 @@ function checkUsersValid(goodUsers) {
 
     return function (submittedUsers) {
         // is every id from array submittedUsers in goodUsers
-        return submittedUsers.every(function (su, su_idx) {
-            return goodUsers.some(function (gu, gu_idx) {
-                return gu.id === submittedUsers[su_idx].id;
+        return submittedUsers.every(function (su) {
+            return goodUsers.some(function (gu) {
+                return gu.id === su.id;
             });
         });
     };
